@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Andrea Lavino - Portfolio</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body class="bg-gray-100 min-h-screen">
+        <!-- Theme Toggle Button -->
+        <div class="fixed top-4 right-4">
+            <button
+                onclick="toggleTheme()"
+                class="theme-toggle px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors"
+            >
+                <span id="theme-icon">🌞</span>
+            </button>
+        </div>
+
+        <!-- Header Section -->
+        <header class="bg-white shadow-md">
+            <div class="container mx-auto px-6 py-8">
+                <div class="flex flex-col items-center text-center">
+                    <img
+                        src="./imgs/propic.jpg"
+                        alt="Profile Photo"
+                        class="profile-image mb-6"
+                    />
+                    <h1 class="text-5xl font-bold text-gray-800 mb-4">
+                        Andrea Lavino
+                    </h1>
+                    <p class="text-xl text-gray-600">
+                        Computer Science Student
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-6 py-8">
+            <!-- About Section -->
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                    About Me
+                </h2>
+                <p class="text-gray-600">
+                    Welcome to my portfolio! I'm a Computer Science student
+                    based in Reggio Emilia. I'm passionate about software
+                    development and artificial intelligence. Feel free to
+                    explore my projects and connect with me.
+                </p>
+            </section>
+
+            <!-- Projects Section -->
+            <section>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                    My Projects
+                </h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    id="projects-container"
+                >
+                    <!-- Project cards will be inserted here by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer with Social Links -->
+        <footer class="bg-white shadow-md mt-12">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex flex-col items-center space-y-4">
+                    <div class="flex space-x-6">
+                        <a
+                            href="https://www.linkedin.com/in/andrea-lavino-46a9b3260/"
+                            target="_blank"
+                            class="social-icon"
+                        >
+                            <img
+                                src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.15.0/linkedin.svg"
+                                alt="LinkedIn"
+                                class="w-8 h-8 dark:invert"
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/Andrealavi/"
+                            target="_blank"
+                            class="social-icon"
+                        >
+                            <img
+                                src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/8.15.0/github.svg"
+                                alt="GitHub"
+                                class="w-8 h-8 dark:invert"
+                            />
+                        </a>
+                    </div>
+                    <p class="text-center text-gray-600">
+                        © 2024 Your Name. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
