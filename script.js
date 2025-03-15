@@ -38,7 +38,7 @@ const projects = [
     description:
       "Python implementation of a Hopfield Neural Network with a graphical user interface for pattern recognition and storage",
     github: "https://github.com/Andrealavi/hopfieldNeuralNetwork",
-    tags: ["Python", "Tkinter"],
+    tags: ["Python", "Tkinter", "Neural Networks"],
   },
   {
     title: "Biennale Venezia Database",
@@ -46,6 +46,13 @@ const projects = [
       "The project focuses on implementing a database infrastructure for a film festival, similar to the Venezia Biennale",
     github: "https://github.com/Andrealavi/Biennale_Venezia_Database",
     tags: ["PostgreSQL", "Latex"],
+  },
+  {
+    title: "Youtube Video/Audio Downloader",
+    description:
+      "Desktop application that allows to download video or audio files from YouTube just pasting the url",
+    github: "https://github.com/Andrealavi/Youtube-Downloader",
+    tags: ["Python", "Tkinter", "MySQL", "yt_dlp", "threading"],
   },
 ];
 
